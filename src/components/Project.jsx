@@ -4,6 +4,7 @@ import Title from "./Title";
 import { GoArrowUpRight } from "react-icons/go";
 import { projectData } from "../constant";
 import CardProjects from "./CardProjects";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const { mode } = useContext(modes);
@@ -26,13 +27,14 @@ const Project = () => {
             element={<br />}
           />
         </div>
-
-        <h3 className="text-end mt-3 text-xl cursor-pointer font-semibold">
+        <Link to='AllProject'>
+        <button className=" flex items-center text-end mt-3 text-base md:text-xl cursor-pointer font-semibold">
           View All Work{" "}
-          <span className=" ml-3 mt-3 text-3xl  ">
+          <span className="ml-3 mt-3 text-lg md:text-3xl  ">
             <GoArrowUpRight className="" />
           </span>
-        </h3>
+        </button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-16">
