@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import "./App.css";
 import Container from "./components/Container";
-import Header from "./components/Header";
-import Landing from "./components/Landing";
-import Services from "./components/Services";
-import Skills from "./components/Skills";
+
 import { modes } from "./context/Context";
-import Project from "./components/Project";
+
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import ProjectDetails from "./Pages/ProjectDetails";
+import Header from './components/Header'
 
 const App = () => {
   const spans = ["", "", "", "", ""];
@@ -28,11 +29,11 @@ const App = () => {
       </div>
 
       <Container>
-        <Header />
-        <Landing />
-        <Services />
-        <Skills />
-        <Project/>
+      <Header />
+        <Routes>
+          <Route  path="/" element={<Home/>}/>
+          <Route  path="/projectDetails/:id" element={<ProjectDetails/>}/>
+        </Routes>
       </Container>
     </>
   );

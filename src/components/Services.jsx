@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import photo_1 from "../image/collaboration.png";
 import { MdDevices } from "react-icons/md";
 import { CiBezier } from "react-icons/ci";
 import { IoCodeSlashOutline } from "react-icons/io5";
@@ -57,7 +56,7 @@ const Services = () => {
     },
     {
       id: 6,
-      image: '',
+      image: <IoCodeSlashOutline/>,
       title: "COLLABORATION",
       discrption:"Crafting intuitive, visually appealing, and user-friendly interfaces involves wireframing and prototyping.",
     },
