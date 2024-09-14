@@ -25,7 +25,7 @@ const Landing = () => {
     const handleDownload = () => {
       const link = document.createElement('a');
       link.href = `${process.env.PUBLIC_URL}/fiezAlhagCv.pdf`; // استبدل 'path_to_your_cv_file.pdf' بمسار ملف الـ PDF الخاص بك
-      link.download = 'fiezAlhag.pdf'; // اسم الملف الذي سيتم تنزيله
+      link.download = 'fiezAlhagCv.pdf'; // اسم الملف الذي سيتم تنزيله
       link.click();
     };
   }
