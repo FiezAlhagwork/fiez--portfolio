@@ -12,6 +12,7 @@ import {modes} from "../context/Context"
 
 
 
+
 const Landing = () => {
   const { mode } = useContext(modes);
   const SocialMeda = [
@@ -19,6 +20,17 @@ const Landing = () => {
     { id: 2, icon: <FaGithub />, link: "" },
     { id: 3, icon: <FaWhatsapp />, link: "" },
   ];
+
+  const DownloadCVButton = () => {
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = `${process.env.PUBLIC_URL}/fiezAlhagCv.pdf`; // استبدل 'path_to_your_cv_file.pdf' بمسار ملف الـ PDF الخاص بك
+      link.download = 'fiezAlhag.pdf'; // اسم الملف الذي سيتم تنزيله
+      link.click();
+    };
+  }
+
+  
   return (
     <section className={`${mode === true ? 'bg-[#1d1d1d] text-[#fff]': "bg-[#dee4e7] text-[#1d1d1d]"} shadow-xl rounded-md my-6 r relative transition-colors `}>
       <main className=" grid grid-cols-4 lg:grid-cols-12 py-16">
@@ -79,7 +91,7 @@ const Landing = () => {
 
             </h1>
             <div className="flex justify-center items-center">
-            <button className={`${mode === true ?  " border-[#fff] hover:text-black hover:bg-[#fff]" : "border-black hover:text-[#fff] hover:bg-black shadow-lg"} outline-none border border-solid  px-10 py-3 font-medium text-md transition-all duration-300   rounded-md`} >Download CV</button>
+            <button className={`${mode === true ?  " border-[#fff] hover:text-black hover:bg-[#fff]" : "border-black hover:text-[#fff] hover:bg-black shadow-lg"} outline-none border border-solid  px-10 py-3 font-medium text-md transition-all duration-300   rounded-md`} onClick={DownloadCVButton} >Download CV</button>
             </div>
           </div>
          
