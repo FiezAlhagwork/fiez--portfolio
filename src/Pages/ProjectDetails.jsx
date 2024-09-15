@@ -52,6 +52,7 @@ const ProjectDetails = () => {
               className=" w-full h-full object-cover md:object-cover rounded-lg"
               src={data.imag1}
               alt=""
+              loading="lazy"
             />
           </div>
 
@@ -127,6 +128,7 @@ const ProjectDetails = () => {
                 className="w-full h-full  md:object-cover rounded-lg"
                 src={data.img2}
                 alt=""
+                loading="lazy"
               />
             </div>
             <div>
@@ -134,6 +136,7 @@ const ProjectDetails = () => {
                 className="w-full h-full  md:object-cover rounded-lg"
                 src={data.img3}
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>

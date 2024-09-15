@@ -1,9 +1,9 @@
-import React from 'react'
 
 import Landing from '../components/Landing'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Services from '../components/Services'
+import Contact from '../components/Contact'
 
 
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
         <Services />
         <Skills />
         <Project/>
+        <Contact/>
     </>
   )
 }

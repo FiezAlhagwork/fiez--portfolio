@@ -22,12 +22,12 @@ const Landing = () => {
   ];
 
   const DownloadCVButton = () => {
-    const handleDownload = () => {
+
       const link = document.createElement('a');
       link.href = `${process.env.PUBLIC_URL}/fiezAlhagCv.pdf`; // استبدل 'path_to_your_cv_file.pdf' بمسار ملف الـ PDF الخاص بك
       link.download = 'fiezAlhagCv.pdf'; // اسم الملف الذي سيتم تنزيله
       link.click();
-    };
+
   }
 
   
@@ -39,7 +39,7 @@ const Landing = () => {
             <div className={`px-4 py-8  ${mode === true ? 'borders' : "border border-solid border-gray-800"}  md:px-4 rounded-md md:py-8` }>
               <div className="relative text-center">
                 <div className="w-full">
-                  <img className="object-contain" src={myPhoto} alt="" />
+                  <img className="object-contain" src={myPhoto} alt="" loading="lazy" />
                 </div>
                 <div className=" absolute w-10 h-10 backdrop-blur-sm px-2 py-2 rounded-xl -left-5 top-16 rotate-12 borders ">
                   <img src={javaScript} alt="" />
@@ -57,7 +57,7 @@ const Landing = () => {
               <div className=" text-center  py-3  ">
                 <h4 className="text-3xl ">Fiez Alhag</h4>
                 <p className="text-sm text-gray-700 uppercase pt-2">Available For Freelance</p>
-                <ul className="md:flex hidden justify-center items-center my-4 gap-2  ">
+                <ul className="md:flex hidden justify-center items-center my-4 gap-2">
                   {SocialMeda.map((data) => {
                     return (
                         <SocialMedi key={data.id} className={` p-4 rounded-md border border-solid border-gray-500 ${mode === true ? '  hover:bg-[#fff] hover:text-black' : 'hover:bg-black hover:text-[#fff]'} transition-all duration-300`} link={data.link} icon={data.icon}/>

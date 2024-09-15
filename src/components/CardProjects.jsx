@@ -10,7 +10,7 @@ const CardProjects = ({items}) => {
     <Link to={`/projectDetails/${items.id}`}>
     <div className={` group w-full   `}>
       <div className={`h-60 p-2 rounded-lg   transition-all duration-300 ${mode === true ?  "group-hover:border-[#c8f31d]" : "group-hover:border-indigo-600"} border-2    border-transparent `}>
-        <img className='h-full rounded-lg object-cover' src={items.imag1} alt="ss" />
+        <img className='h-full rounded-lg object-cover' src={items.imag1} alt="ss" loading="lazy" />
       </div>
       <div className='p-2 flex justify-between items-center'>
         <div>

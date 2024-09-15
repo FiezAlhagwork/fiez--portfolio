@@ -10,6 +10,10 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiBootstrap } from "react-icons/si";
 import photo1 from "./image/photo_2024-09-03_12-36-51.jpg"
+import { FaLinkedinIn } from "react-icons/fa6";
+
+import { FaWhatsapp } from "react-icons/fa6";
+
 import todo1 from "./image/todo1.jpg"
 import todo2 from "./image/todo2.jpg"
 import todo3 from "./image/todo3.jpg"
@@ -27,6 +31,10 @@ import shop3 from "./image/shop3.PNG"
 import state1 from "./image/state1.PNG"
 import state2 from "./image/state2.PNG"
 import state3 from "./image/state3.PNG"
+
+const phoneNumber = '963997013656'; // رقم الواتس آب بصيغة دولية
+const message = 'مرحبا، أود التحدث معك'; // الرسالة الافتراضية
+const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
 export const skills = [
     {id:1,icon:<FaReact/>,name:"react", cat:"Frameworks",class:"text-cyan-500",width:"90"},
@@ -52,6 +60,12 @@ export const projectData = [
     {id:6,imag1:shop1,name:"shopping",categories:"Web App" ,description:"A shoe store project is an e-commerce platform designed for selling footwear online. The goal is to create a user-friendly, visually appealing, and functional store where customers can browse, filter, and purchase shoes from various brands and categories. The project includes features for product discovery, secure payments, and a smooth shopping experience, ensuring users can find the right pair of shoes efficiently.",img2:shop2,img3:shop3,Features:["Responsive Layout Design","Detailed documentation","SEO optimized"],webSite:"https://shopping-fk7i.vercel.app"},
     {id:7,imag1:state1,name:"shopping",categories:"Web App" ,description:"A shoe store project is an e-commerce platform designed for selling footwear online. The goal is to create a user-friendly, visually appealing, and functional store where customers can browse, filter, and purchase shoes from various brands and categories. The project includes features for product discovery, secure payments, and a smooth shopping experience, ensuring users can find the right pair of shoes efficiently.",img2:state2,img3:state3,Features:["Responsive Layout Design","Detailed documentation","SEO optimized"],webSite:"https://state-mangment.vercel.app"},
 ]
+
+export  const SocialMeda = [
+    { id: 1, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/fiez-alhag-7a9007320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { id: 2, icon: <FaGithub />, link: "" },
+    { id: 3, icon: <FaWhatsapp />, link: whatsappLink },
+  ];
 
 
 

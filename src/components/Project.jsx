@@ -10,11 +10,11 @@ const Project = () => {
   const { mode } = useContext(modes);
   return (
     <div
-      className={`py-16 px-10 ${
+      className={`py-16 px-10 shadow-xl rounded-b-2xl ${
         mode === true
           ? "bg-[#1d1d1d] text-[#fff]"
           : "bg-[#dee4e7] text-[#1d1d1d]"
-      } `}
+      }  `}
     >
       <div className=" flex justify-between items-center">
         <div>

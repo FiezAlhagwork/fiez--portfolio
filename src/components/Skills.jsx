@@ -41,7 +41,7 @@ const Skills = () => {
         mode === true
           ? "bg-[#1d1d1d] text-[#fff] border-b-[#ffffff33]"
           : "bg-[#dee4e7] text-[#1d1d1d] border-b-gray-500"
-      }  py-8 px-10  mt-10 border-b border-b-solid  `}
+      }  py-8 px-10  mt-10 border-b border-b-solid rounded-t-xl  `}
     >
       <div className="text-center py-4">
         <Title
