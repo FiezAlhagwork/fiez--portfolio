@@ -3,7 +3,8 @@ import { modes } from "../context/Context";
 import Title from "./Title";
 import TextFiled from "./TextFiled";
 import SocialMedi from "./SocialMedi";
-import { SocialMeda } from "../constant";
+import { SocialMeda, whatsappLink } from "../constant";
+
 
 const Contact = () => {
   const { mode } = useContext(modes);
@@ -30,7 +31,7 @@ const Contact = () => {
             If you would like to work with us or just want to get in touch,
             Reach out, we're here to listen and assist!{" "}
           </p>
-          <a href="h" className=" my-6">
+          <a href={whatsappLink} className=" my-6">
             <button className=" text-3xl underline">+963 997 013 656</button>
           </a>
 

@@ -4,31 +4,20 @@ import javaScript from "../image/javascript.svg";
 import { FaReact } from "react-icons/fa6";
 import { FaAngular } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6"; 
 import SocialMedi from "./SocialMedi";
 import { useContext } from "react";
 import {modes} from "../context/Context"
+import { SocialMeda } from "../constant";
+
 
 
 
 
 const Landing = () => {
   const { mode } = useContext(modes);
-  const SocialMeda = [
-    { id: 1, icon: <FaLinkedinIn />, link: "" },
-    { id: 2, icon: <FaGithub />, link: "" },
-    { id: 3, icon: <FaWhatsapp />, link: "" },
-  ];
 
-  const DownloadCVButton = () => {
 
-      const link = document.createElement('a');
-      link.href = `${process.env.PUBLIC_URL}/fiezAlhagCv.pdf`; // استبدل 'path_to_your_cv_file.pdf' بمسار ملف الـ PDF الخاص بك
-      link.download = 'fiezAlhagCv.pdf'; // اسم الملف الذي سيتم تنزيله
-      link.click();
 
-  }
 
   
   return (
@@ -91,7 +80,7 @@ const Landing = () => {
 
             </h1>
             <div className="flex justify-center items-center">
-            <button className={`${mode === true ?  " border-[#fff] hover:text-black hover:bg-[#fff]" : "border-black hover:text-[#fff] hover:bg-black shadow-lg"} outline-none border border-solid  px-10 py-3 font-medium text-md transition-all duration-300   rounded-md`} onClick={DownloadCVButton} >Download CV</button>
+            <button className={`${mode === true ?  " border-[#fff] hover:text-black hover:bg-[#fff]" : "border-black hover:text-[#fff] hover:bg-black shadow-lg"} outline-none border border-solid  px-10 py-3 font-medium text-md transition-all duration-300   rounded-md`}  >Download CV</button>
             </div>
           </div>
          

@@ -21,7 +21,7 @@ const TextFiled = ({
           value={value}
           required={required}
           placeholder={placeholder}
-          className={` ${mode === true ? " border  border-solid bg-[#fff]  focus:ring-[#c8f31d] focus:border-[#c8f31d] " : "border border-solid border-[#1d1d1d]  focus:ring-[#4649ff] focus:border-[#4649ff] "} bg-transparent    text-gray-900 text-sm rounded-lg 
+          className={` ${mode === true ? " border  border-solid bg-[#fff]  focus:ring-[#c8f31d] focus:border-[#c8f31d] " : "border border-solid border-[#1d1d1d]  focus:ring-[#4649ff] focus:border-[#4649ff] "} bg-transparent   text-sm rounded-lg 
          outline-none
           w-full p-3 ${coustmStyle}`}
           onChange={handleChange}

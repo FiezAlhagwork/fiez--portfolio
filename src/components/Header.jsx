@@ -14,7 +14,7 @@ const Header = () => {
   const { mode} = useContext(modes);
 
   return (
-    <div className=" flex justify-between items-center py-6 ">
+    <div className=" flex justify-between items-center py-6  " id="top">
       <h1 className={`text-4xl font-bold ${mode === true ? 'text-white' : ' bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600' } `}>Fiez</h1>
       <ul className="md:flex hidden gap-4 ml-10 ">
         {SocialMeda.map((data) => {

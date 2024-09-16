@@ -49,7 +49,7 @@ const ProjectDetails = () => {
 
           <div className=" h-96 mt-6 ">
             <img
-              className=" w-full h-full object-cover md:object-cover rounded-lg"
+              className=" w-full  h-full object-fill md:object-cover rounded-lg"
               src={data.imag1}
               alt=""
               loading="lazy"
