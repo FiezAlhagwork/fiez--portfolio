@@ -1,7 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import { SocialMeda } from "../constant";
+
+import { SocialMeda } from "../constants";
 import SocialMedi from "./SocialMedi";
 import { ToggleButton } from "./ToggleButton";
 import { useContext } from "react";

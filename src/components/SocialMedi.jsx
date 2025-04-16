@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const SocialMedi = ({className,link,icon}) => {
+const SocialMedi = ({ className, link, icon }) => {
   return (
-              <a
-                
-                className={className}
-                href={link}
-              >
-                <li>{icon}</li>
-              </a>
-  )
-}
+    <li className={className}>
+      <a href={link}>{icon}</a>
+    </li>
+  );
+};
 
-export default SocialMedi
+export default SocialMedi;

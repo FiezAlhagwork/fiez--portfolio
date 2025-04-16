@@ -1,16 +1,29 @@
-import React, { useContext } from "react";
+import { useContext, useRef } from "react";
 import { modes } from "../context/Context";
 import Title from "./Title";
 import TextFiled from "./TextFiled";
-import SocialMedi from "./SocialMedi";
-import { SocialMeda, whatsappLink } from "../constant";
-
+import { SocialMeda, whatsappLink } from "../constants";
+import { useGSAP } from "@gsap/react";
+import { animateWithGsap } from "../utils";
+import gsap from "gsap";
 
 const Contact = () => {
   const { mode } = useContext(modes);
+  const containerRef = useRef(null);
+  useGSAP(() => {
+    const cards = containerRef.current?.children;
+    animateWithGsap("#title" , {opacity:1 , y:0 , duration:1,ease:"power3.out"})
+    if (cards && cards.length > 0) {
+      animateWithGsap(cards, {
+        opacity: 1,
+        y: 0,
+        duration: 1.3,
+        ease: "power3.out",
+      });
+    }
 
 
-
+  }, []);
   return (
     <div
       className={`${
@@ -27,7 +40,7 @@ const Contact = () => {
             hilight="brilliant"
             discrption2="!"
           ></Title>
-          <p className={` ${mode === true ? "text-[#ddd]" : " text-"} my-6`}>
+          <p className={` ${mode === true ? "text-[#ddd]" : " text-"} my-6 opacity-0 translate-y-36`} id="title">
             If you would like to work with us or just want to get in touch,
             Reach out, we're here to listen and assist!{" "}
           </p>
@@ -35,22 +48,22 @@ const Contact = () => {
             <button className=" text-3xl underline">+963 997 013 656</button>
           </a>
 
-          <div className=" flex mt-6  gap-x-5">
+          <ul className=" flex mt-6  gap-x-5" ref={containerRef}>
             {SocialMeda.map((data) => {
               return (
-                <SocialMedi
+                <li
                   key={data.id}
-                  className={`  p-3 rounded-full border border-solid border-gray-500 ${
+                  className={` opacity-0 translate-y-36  p-3 rounded-full border border-solid border-gray-500 ${
                     mode === true
                       ? " text-white hover:bg-white hover:text-black"
                       : "text-black hover:bg-black hover:text-[#fff]"
-                  } transition-all duration-400`}
-                  link={data.link}
-                  icon={data.icon}
-                />
+                  } transition-all duration-400 `}
+                >
+                  <a href={data.link}>{data.icon}</a>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </div>
         <form action="" className="w-full md:w-3/5 ">
           <div className="md:flex block  gap-x-4 ">

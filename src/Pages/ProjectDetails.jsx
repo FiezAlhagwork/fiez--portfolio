@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { modes } from "../context/Context";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { projectData } from "../constant";
+import { projectData } from "../constants";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
 import { CiCalendarDate } from "react-icons/ci";

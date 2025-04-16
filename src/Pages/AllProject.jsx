@@ -1,13 +1,12 @@
-import React from "react";
-import { useContext } from "react";
+import { useContext , useRef } from "react";
 import { modes } from "../context/Context";
-import { projectData } from "../constant";
+import { projectData } from "../constants";
 import CardProjects from "../components/CardProjects";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 import Title from "../components/Title";
 
-function AllProject() {
+const  AllProject =  () =>  {
   const { mode } = useContext(modes);
   return (
     <section

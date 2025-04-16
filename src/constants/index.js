@@ -1,3 +1,8 @@
+import { MdDevices } from "react-icons/md";
+import { CiBezier } from "react-icons/ci";
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { HiMiniComputerDesktop } from "react-icons/hi2";
+import { IoRocketOutline } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
 import { FaAngular } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
@@ -9,45 +14,121 @@ import { FaGitAlt} from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiBootstrap } from "react-icons/si";
-import photo1 from "./image/photo_2024-09-03_12-36-51.jpg"
 import { FaLinkedinIn } from "react-icons/fa6";
-
 import { FaWhatsapp } from "react-icons/fa6";
-
-import todo1 from "./image/todo1.jpg"
-import todo2 from "./image/todo2.jpg"
-import todo3 from "./image/todo3.jpg"
-import weather1 from "./image/weather3.PNG"
-import weather2 from "./image/wather2.PNG"
-import form from "./image/form.PNG"
-import game1 from "./image/game1.PNG"
-import game2 from "./image/game2.PNG"
-import game3 from "./image/game3.PNG"
-import shop1 from "./image/shop1.PNG"
-import shop2 from "./image/shop2.PNG"
-import shop3 from "./image/shop3.PNG"
+import { BiLogoMongodb } from "react-icons/bi";
+import { FaNode } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { BiLogoCPlusPlus } from "react-icons/bi";
 
 
-import state1 from "./image/state1.PNG"
-import state2 from "./image/state2.PNG"
-import state3 from "./image/state3.PNG"
+
+
+
+
+import photo1 from "../image/photo_2024-09-03_12-36-51.jpg"
+import todo1 from "../image/todo1.jpg"
+import todo2 from "../image/todo2.jpg"
+import todo3 from "../image/todo3.jpg"
+import weather1 from "../image/weather3.PNG"
+import weather2 from "../image/wather2.PNG"
+import form from "../image/form.PNG"
+import game1 from "../image/game1.PNG"
+import game2 from "../image/game2.PNG"
+import game3 from "../image/game3.PNG"
+import shop1 from "../image/shop1.PNG"
+import shop2 from "../image/shop2.PNG"
+import shop3 from "../image/shop3.PNG"
+
+
+import state1 from "../image/state1.PNG"
+import state2 from "../image/state2.PNG"
+import state3 from "../image/state3.PNG"
+
+
+
+export const NavBar = [
+  { id: 1, name: "home", link: "" },
+  { id: 2, name: "Services", link: "" },
+  { id: 3, name: "About", link: "" },
+  { id: 4, name: "Portfolio", link: "" },
+  { id: 5, name: "Contact", link: "" },
+];
+
+export const CardServeses = [
+  {
+    id: 1,
+    image: <CiBezier />,
+    title: "UI / UX DESIGN",
+    discrption:
+      "Crafting intuitive, visually appealing, and user-friendly interfaces involves wireframing and prototyping.",
+  },
+  {
+    id: 2,
+    image: <HiMiniComputerDesktop />,
+    title: "WEB DEVELOPMENT",
+    discrption:
+      "Creating complex interactive web apps using HTML, CSS and JavaScript for frontend development.",
+  },
+  {
+    id: 3,
+    image: <IoCodeSlashOutline />,
+    title: "WEB APPLICATION",
+    discrption:
+      "Building interactive web applications using React.js and next.js",
+  },
+  {
+    id: 4,
+    image: <MdDevices />,
+    title: "Responsive Design",
+    discrption:
+      "Optimizing websites and apps for different devices ensures a seamless experience across desktops, tablets, and smartphones.",
+  },
+  {
+    id: 5,
+    image: <IoRocketOutline />,
+    title: "PERFORMANCE OPTIMIZATION",
+    discrption:
+      "Optimizing frontend code and assets to improve loading times , SEO and overall performance.",
+  },
+  {
+    id: 6,
+    image: <IoCodeSlashOutline />,
+    title: "COLLABORATION",
+    discrption:
+      "Crafting intuitive, visually appealing, and user-friendly interfaces involves wireframing and prototyping.",
+  },
+];
+
+export const buttons = [
+  { id: 1, cat: "Frameworks" },
+  { id: 2, cat: "language" },
+  { id: 3, cat: "Tools" },
+];
+
+
 
 const phoneNumber = '963997013656'; // رقم الواتس آب بصيغة دولية
 const message = 'مرحبا، أود التحدث معك'; // الرسالة الافتراضية
 export const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
 export const skills = [
-    {id:1,icon:<FaReact/>,name:"react", cat:"Frameworks",class:"text-cyan-500",width:"90"},
+    {id:1,icon:<FaReact/>,name:"React19", cat:"Frameworks",class:"text-cyan-500",width:"90"},
     {id:3,icon:<FaGithub/>,name:"Github", cat:"Tools",class:"text-black",width:"90"},
-    {id:2,icon:<FaAngular/>,name:"Angular", cat:"Frameworks",class:"text-red-700",width:"80"},
+    {id:2,icon:<FaAngular/>,name:"Angular17", cat:"Frameworks",class:"text-red-700",width:"80"},
     {id:4,icon:<SiJavascript/>,name:"javaScript", cat:"language",class:" text-yellow-400",width:"95"},
     {id:6,icon:<RiNextjsFill/>,name:"Next", cat:"Frameworks",class:" text-black",width:"85"},
     {id:5,icon:<BiLogoTypescript/>,name:"TypeScript", cat:"language",class:" text-blue-500",width:"90"},
     {id:7,icon:<FaGitAlt/>,name:"git", cat:"Tools",class:"text-orange-700 ",width:"90"},
     {id:8,icon:<SiTailwindcss/>,name:"Tailwind", cat:"Frameworks",class:"text-blue-400",width:"95"},
-    {id:9,icon:<FaHtml5/>,name:"html", cat:"language",class:"text-orange-700 ",width:"100"},
+    {id:9,icon:<FaHtml5/>,name:"Html5", cat:"language",class:"text-orange-700 ",width:"100"},
     {id:11,icon:<SiBootstrap/>,name:"Bootstrap", cat:"Frameworks",class:"text-purple-600",width:"75"},
-    {id:10,icon:<IoLogoCss3/>,name:"Css", cat:"language",class:"text-blue-500 ",width:"90"},
+    {id:10,icon:<IoLogoCss3/>,name:"Css3", cat:"language",class:"text-blue-500 ",width:"90"},
+    {id:11,icon:<BiLogoMongodb/>,name:"Mongodb", cat:"language",class:"text-green-600",width:"95"},
+    {id:12,icon:<FaNode/>,name:"node.js", cat:"language",class:"text-green-800",width:"95"},
+    {id:13,icon:<SiExpress/>,name:"Exprees", cat:"Frameworks",class:"text-white",width:"95"},
+    {id:14,icon:<BiLogoCPlusPlus/>,name:"C++", cat:"language",class:"text-blue-600",width:"95"},
+    
 ]
 
 

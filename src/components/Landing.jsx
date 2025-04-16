@@ -1,4 +1,3 @@
-import React from "react";
 import myPhoto from "../image/photo_2025-04-07_17-10-29.jpg";
 import javaScript from "../image/javascript.svg";
 import { FaReact } from "react-icons/fa6";
@@ -7,10 +6,18 @@ import { FaGithub } from "react-icons/fa6";
 import SocialMedi from "./SocialMedi";
 import { useContext } from "react";
 import { modes } from "../context/Context";
-import { SocialMeda } from "../constant";
+import { SocialMeda } from "../constants";
+import { useGSAP } from "@gsap/react";
+import { animateWithGsap } from "../utils";
 
 const Landing = () => {
   const { mode } = useContext(modes);
+
+  useGSAP(() => {
+    animateWithGsap("#myPhoto",{opacity:1,ease:"power1.inOut",x:0,duration:1,delay:1.3})
+    animateWithGsap("#section",{opacity:1,ease:"power1.inOut",duration:1,y:0})
+    animateWithGsap("#content",{opacity:1,ease:"power1.inOut",duration:1,delay:1.3,x:0})
+  },[])
 
   return (
     <section
@@ -18,10 +25,10 @@ const Landing = () => {
         mode === true
           ? "bg-[#1d1d1d] text-[#fff]"
           : "bg-[#dee4e7] text-[#1d1d1d]"
-      } shadow-xl rounded-md my-6 r relative transition-colors `}
+      } shadow-xl rounded-md my-6 r relative transition-colors opacity-0 translate-y-[-300px]`} id="section"
     >
       <main className=" grid grid-cols-4 lg:grid-cols-12 py-16">
-        <div className=" col-span-4 px-2 md:px-10">
+        <div className=" col-span-4 px-2 md:px-10 opacity-0 translate-x-[-300px] " id="myPhoto">
           <div className="">
             <div
               className={`px-4 py-8  ${
@@ -78,7 +85,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" col-span-4 md:col-span-8 px-10 lg:px-0 lg:pr-3 mt-6 lg:mt-0   ">
+        <div className=" col-span-4 md:col-span-8 px-10 lg:px-0 lg:pr-3 mt-6 lg:mt-0 opacity-0 translate-x-96" id="content">
           <h1 className="lg:text-6xl text-4xl mt-3  ">
             <span className="">
               {" "}
@@ -117,7 +124,7 @@ const Landing = () => {
                   } after:absolute after:w-2 after:h-2 after:p-1  after:rounded-full after:-bottom-1 after:-left-1 before:absolute before:w-2 before:h-2 before:p-1  before:rounded-full before:-right-1 before:-bottom-1`}
                 ></li>
               </span>
-              <span> Based</span> <br className=" hidden lg:inline" /> in Syria
+              <span>Based</span> <br className=" hidden lg:inline" /> in Syria
             </span>
           </h1>
           <div className="flex lg:flex-row flex-col gap-10 mt-20 ">
