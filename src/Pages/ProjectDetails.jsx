@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useContext } from "react";
 import { modes } from "../context/Context";
 import { useParams, Link, useNavigate } from "react-router-dom";
@@ -115,8 +116,8 @@ const ProjectDetails = () => {
                     </span>
                     <p className=" text-base"> Website :</p>
                   </div>
-                  <a href={data.webSite} className=" text-base  ">
-                    {data.webSite}
+                  <a href={data.webSite} target="_blank" className=" text-blue-600 underline font-semibold text-lg  ">
+                    Link
                   </a>
                 </div>
               </div>
