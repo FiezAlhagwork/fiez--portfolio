@@ -43,6 +43,22 @@ import apple1 from "../image/apple1.PNG";
 import apple2 from "../image/apple2.PNG";
 import apple3 from "../image/apple3.PNG";
 
+import car1 from "../image/carshow1.PNG";
+import car2 from "../image/carshow2.PNG";
+import car3 from "../image/carshow3.PNG";
+
+import summarize1 from "../image/summarize1.PNG"
+import summarize2 from "../image/summarize2.PNG"
+import summarize3 from "../image/summarize3.PNG"
+
+import note1 from "../image/note1.jpg"
+import note2 from "../image/note2.jpg"
+import note3 from "../image/note3.jpg"
+
+import menu1 from "../image/menu1.PNG"
+import menu2 from "../image/menu2.PNG"
+import menu3 from "../image/menu3.PNG"
+
 export const NavBar = [
   { id: 1, name: "home", link: "" },
   { id: 2, name: "Services", link: "" },
@@ -182,14 +198,6 @@ export const skills = [
     width: "100",
   },
   {
-    id: 11,
-    icon: <SiBootstrap />,
-    name: "Bootstrap",
-    cat: "Frameworks",
-    class: "text-purple-600",
-    width: "75",
-  },
-  {
     id: 10,
     icon: <IoLogoCss3 />,
     name: "Css3",
@@ -199,6 +207,14 @@ export const skills = [
   },
   {
     id: 11,
+    icon: <SiBootstrap />,
+    name: "Bootstrap",
+    cat: "Frameworks",
+    class: "text-purple-600",
+    width: "75",
+  },
+  {
+    id: 12,
     icon: <BiLogoMongodb />,
     name: "Mongodb",
     cat: "language",
@@ -206,7 +222,7 @@ export const skills = [
     width: "95",
   },
   {
-    id: 12,
+    id: 13,
     icon: <FaNode />,
     name: "node.js",
     cat: "language",
@@ -214,7 +230,7 @@ export const skills = [
     width: "95",
   },
   {
-    id: 13,
+    id: 14,
     icon: <SiExpress />,
     name: "Exprees",
     cat: "Frameworks",
@@ -222,7 +238,7 @@ export const skills = [
     width: "95",
   },
   {
-    id: 14,
+    id: 15,
     icon: <BiLogoCPlusPlus />,
     name: "C++",
     cat: "language",
@@ -232,6 +248,22 @@ export const skills = [
 ];
 
 export const projectData = [
+  {
+    id: 12,
+    imag1:menu2,
+    name: "Menu App",
+    categories: "Web App",
+    description:
+      "I developed a full-stack Menu App for managing beverage listings, featuring both front-end and back-end components. Users can browse the available drinks with filtering by category and a real-time search feature. The app also includes an admin dashboard that enables adding new drinks, updating prices, editing names or categories, and deleting items effortlessly. The interface is interactive and user-friendly, while the back end efficiently handles data operations to ensure a smooth and professional experience.",
+    img2: menu1,
+    img3: menu3,
+    Features: [
+      "Responsive Layout Design",
+      "Detailed documentation",
+      "SEO optimized",
+    ],
+    webSite: "https://github.com/FiezAlhagwork/menu-app-back-end",
+  },
   {
     id: 8,
     imag1: apple1,
@@ -248,6 +280,56 @@ export const projectData = [
     ],
     webSite: "https://apple-website-ebon-zeta.vercel.app/",
   },
+
+  {
+    id: 10,
+    imag1: summarize1,
+    name: "AI Article Summarizer",
+    categories: "Web App",
+    description:
+      "I developed an interactive web application that uses artificial intelligence to summarize long-form articles quickly and intelligently. The platform allows users to input article URLs or full texts, and the system automatically analyzes the content and generates a clear, concise summary of the key points. The interface is designed to be user-friendly and responsive, making it an ideal tool for students, researchers, or anyone looking to save time and grasp information faster. car rental website that showcases a wide range of available vehicles in a modern and user-friendly interface. The platform leverages advanced technologies to provide a seamless experience, allowing users to explore car details, choose the model, color, price range, and specifications. It also includes filtering options by category or model, making it easy for users to find and select the perfect rental car efficiently and professionally.",
+    img2: summarize2,
+    img3: summarize3,
+    Features: [
+      "Responsive Layout Design",
+      "Detailed documentation",
+      "SEO optimized",
+    ],
+    webSite: "https://ai-summarizer-kappa-five.vercel.app/",
+  },
+  {
+    id: 11,
+    imag1:note1,
+    name: "Notes App",
+    categories: "Web App",
+    description:
+      "I developed a full-stack Notes App that allows users to create, edit, delete, and organize their notes with ease and efficiency. The front end features a clean, responsive, and user-friendly interface, while the back end securely handles data management using modern technologies. The app supports real-time saving, tagging, and fast search functionality, making it a practical tool for managing daily tasks, ideas, and to-dos.",
+    img2: note2,
+    img3: note3,
+    Features: [
+      "Responsive Layout Design",
+      "Detailed documentation",
+      "SEO optimized",
+    ],
+    webSite: "https://github.com/FiezAlhagwork/-App-Notes-back-End",
+  },
+  {
+    id: 9,
+    imag1: car1,
+    name: "CarShow case",
+    categories: "Web Design",
+    description:
+      "I developed an interactive car rental website that showcases a wide range of available vehicles in a modern and user-friendly interface. The platform leverages advanced technologies to provide a seamless experience, allowing users to explore car details, choose the model, color, price range, and specifications. It also includes filtering options by category or model, making it easy for users to find and select the perfect rental car efficiently and professionally.",
+    img2: car2,
+    img3: car3,
+    Features: [
+      "Responsive Layout Design",
+      "Detailed documentation",
+      "SEO optimized",
+    ],
+    webSite: "https://car-show-case-gamma.vercel.app/",
+  },
+
   {
     id: 1,
     imag1: photo1,

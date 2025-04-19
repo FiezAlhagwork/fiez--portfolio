@@ -61,7 +61,7 @@ const ProjectDetails = () => {
             <div className=" w-full md:w-1/2  ">
               <h1 className=" text-4xl my-2">{data.name}</h1>
               <p
-                className={`text-sm md:text-base  font-normal leading-8 pt-2  ${
+                className={`text-sm md:text-base  font-normal leading-8 pt-2 ${
                   mode === true ? "text-[#ddd]" : " text-[#2d2d2d]"
                 }`}
               >
