@@ -68,9 +68,9 @@ const ProjectDetails = () => {
                 {data.description}
               </p>
               <div className="pt-10">
-                {data.Features.map((item) => {
+                {data.Features.map((item, index) => {
                   return (
-                    <h1 className="text-lg py-3">
+                    <h1 className="text-lg py-3" key={index}>
                       <span className="mr-2">
                         <GoIterations />
                       </span>

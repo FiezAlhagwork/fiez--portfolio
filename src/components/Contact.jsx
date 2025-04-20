@@ -1,26 +1,17 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { modes } from "../context/Context";
 import Title from "./Title";
 import TextFiled from "./TextFiled";
 import { SocialMeda, whatsappLink } from "../constants";
 import { useGSAP } from "@gsap/react";
 import { animateWithGsap } from "../utils";
-import gsap from "gsap";
+
 
 const Contact = () => {
   const { mode } = useContext(modes);
-  const containerRef = useRef(null);
   useGSAP(() => {
-    const cards = containerRef.current?.children;
+    
     animateWithGsap("#title" , {opacity:1 , y:0 , duration:1,ease:"power3.out"})
-    if (cards && cards.length > 0) {
-      animateWithGsap(cards, {
-        opacity: 1,
-        y: 0,
-        duration: 1.3,
-        ease: "power3.out",
-      });
-    }
 
 
   }, []);
@@ -48,12 +39,12 @@ const Contact = () => {
             <button className=" text-3xl underline">+963 997 013 656</button>
           </a>
 
-          <ul className=" flex mt-6  gap-x-5" ref={containerRef}>
+          <ul className=" flex mt-6  gap-x-5" >
             {SocialMeda.map((data) => {
               return (
                 <li
                   key={data.id}
-                  className={` opacity-0 translate-y-36  p-3 rounded-full border border-solid border-gray-500 ${
+                  className={` p-3 rounded-full border border-solid border-gray-500 ${
                     mode === true
                       ? " text-white hover:bg-white hover:text-black"
                       : "text-black hover:bg-black hover:text-[#fff]"
