@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { modes } from "../context/Context";
 import Title from "./Title";
 import { GoArrowUpRight } from "react-icons/go";
@@ -21,22 +21,18 @@ const Project = () => {
   return (
     <div
       className={`py-16 px-10 shadow-xl rounded-b-2xl ${
-        mode === true
-          ? "bg-[#1d1d1d] text-[#fff]"
-          : "bg-[#dee4e7] text-[#1d1d1d]"
+        mode ? "bg-[#1d1d1d] text-[#fff]" : "bg-[#dee4e7] text-[#1d1d1d]"
       }  `}
     >
       <div className=" flex justify-between items-center">
-        <div>
-          {" "}
-          <Title
-            title="Our Project"
-            discrption="Dive into my"
-            hilight=" portfolio &"
-            discrption2="give me your feedback"
-            element={<br />}
-          />
-        </div>
+        {""}
+        <Title
+          title="Our Project"
+          description="Dive into my"
+          highlight=" portfolio &"
+          description2="give me your feedback"
+          element={<br />}
+        />
         <Link to="AllProject">
           <button
             className=" flex items-center text-end mt-3 text-base md:text-xl cursor-pointer font-semibold opacity-0  translate-y-36  "
@@ -49,13 +45,18 @@ const Project = () => {
           </button>
         </Link>
       </div>
+      <ProjectList />
+    </div>
+  );
+};
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-16">
-        {projectData.map(
-          (item, index) =>
-            index < 3 && <CardProjects key={item.id} items={item} />
-        )}
-      </div>
+const ProjectList = () => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-16">
+      {projectData.map(
+        (item, index) =>
+          index < 3 && <CardProjects key={item.id} items={item} />
+      )}
     </div>
   );
 };

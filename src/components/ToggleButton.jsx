@@ -1,15 +1,14 @@
 import { FiMoon, FiSun } from "react-icons/fi";
-import { useContext,  } from "react";
+import { useContext } from "react";
 import gsap from "gsap";
 import { modes } from "../context/Context";
 import { useGSAP } from "@gsap/react";
 
-export const ToggleButton = ({ selected , setSelected }) => {
+export const ToggleButton = ({ selected, setSelected }) => {
   const TOGGLE_CLASSES =
     "text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10";
 
   const { mode, setMode } = useContext(modes);
-
 
   useGSAP(() => {
     gsap.to("#toggleButton", {
@@ -40,8 +39,6 @@ export const ToggleButton = ({ selected , setSelected }) => {
         <FiSun className="relative z-10 text-lg md:text-sm" />
         <span className="relative z-10">Dark</span>
       </button>
-
-      {/* عنصر الخلفية المتحركة  */}
       <div className="absolute inset-0 z-0 flex">
         <span
           id="toggleButton"

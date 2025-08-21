@@ -47,17 +47,17 @@ import car1 from "../image/carshow1.PNG";
 import car2 from "../image/carshow2.PNG";
 import car3 from "../image/carshow3.PNG";
 
-import summarize1 from "../image/summarize1.PNG"
-import summarize2 from "../image/summarize2.PNG"
-import summarize3 from "../image/summarize3.PNG"
+import summarize1 from "../image/summarize1.PNG";
+import summarize2 from "../image/summarize2.PNG";
+import summarize3 from "../image/summarize3.PNG";
 
-import note1 from "../image/note1.jpg"
-import note2 from "../image/note2.jpg"
-import note3 from "../image/note3.jpg"
+import note1 from "../image/note1.jpg";
+import note2 from "../image/note2.jpg";
+import note3 from "../image/note3.jpg";
 
-import menu1 from "../image/menu1.PNG"
-import menu2 from "../image/menu2.PNG"
-import menu3 from "../image/menu3.PNG"
+import menu1 from "../image/menu1.PNG";
+import menu2 from "../image/menu2.PNG";
+import menu3 from "../image/menu3.PNG";
 
 export const NavBar = [
   { id: 1, name: "home", link: "" },
@@ -67,47 +67,47 @@ export const NavBar = [
   { id: 5, name: "Contact", link: "" },
 ];
 
-export const CardServeses = [
+export const CardServes = [
   {
     id: 1,
     image: <CiBezier />,
     title: "UI / UX DESIGN",
-    discrption:
+    desorption:
       "Crafting intuitive, visually appealing, and user-friendly interfaces involves wireframing and prototyping.",
   },
   {
     id: 2,
     image: <HiMiniComputerDesktop />,
     title: "WEB DEVELOPMENT",
-    discrption:
+    desorption:
       "Creating complex interactive web apps using HTML, CSS and JavaScript for frontend development.",
   },
   {
     id: 3,
     image: <IoCodeSlashOutline />,
     title: "WEB APPLICATION",
-    discrption:
+    desorption:
       "Building interactive web applications using React.js and next.js",
   },
   {
     id: 4,
     image: <MdDevices />,
     title: "Responsive Design",
-    discrption:
+    desorption:
       "Optimizing websites and apps for different devices ensures a seamless experience across desktops, tablets, and smartphones.",
   },
   {
     id: 5,
     image: <IoRocketOutline />,
     title: "PERFORMANCE OPTIMIZATION",
-    discrption:
+    desorption:
       "Optimizing frontend code and assets to improve loading times , SEO and overall performance.",
   },
   {
     id: 6,
     image: <IoCodeSlashOutline />,
     title: "COLLABORATION",
-    discrption:
+    desorption:
       "Crafting intuitive, visually appealing, and user-friendly interfaces involves wireframing and prototyping.",
   },
 ];
@@ -118,8 +118,8 @@ export const buttons = [
   { id: 3, cat: "Tools" },
 ];
 
-const phoneNumber = "963997013656"; // رقم الواتس آب بصيغة دولية
-const message = "مرحبا، أود التحدث معك"; // الرسالة الافتراضية
+const phoneNumber = "963991734151";
+const message = "مرحبا، أود التحدث معك";
 export const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message
 )}`;
@@ -250,7 +250,7 @@ export const skills = [
 export const projectData = [
   {
     id: 12,
-    imag1:menu2,
+    imag1: menu2,
     name: "Menu App",
     categories: "Web App",
     description:
@@ -299,7 +299,7 @@ export const projectData = [
   },
   {
     id: 11,
-    imag1:note1,
+    imag1: note1,
     name: "Notes App",
     categories: "Web App",
     description:
@@ -444,7 +444,7 @@ export const projectData = [
   },
 ];
 
-export const SocialMeda = [
+export const SocialMediData = [
   {
     id: 1,
     icon: <FaLinkedinIn />,

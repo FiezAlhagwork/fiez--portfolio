@@ -9,7 +9,8 @@ import Home from "./Pages/Home";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Header from "./components/Header";
 import AllProject from "./Pages/AllProject";
-import Footer from "./components/footer";
+import Footer from "./components/Footer.jsx";
+
 
 const App = () => {
   const spans = ["", "", "", "", ""];
@@ -55,8 +56,7 @@ const App = () => {
           <Route path="/projectDetails/:id" element={<ProjectDetails />} />
           <Route path="/AllProject" element={<AllProject />} />
         </Routes>
-        <Footer/>
-        
+        <Footer/>        
       </Container>
     </>
   );
