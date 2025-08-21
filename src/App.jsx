@@ -9,8 +9,7 @@ import Home from "./Pages/Home";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Header from "./components/Header";
 import AllProject from "./Pages/AllProject";
-import Footer from "./components/Footer.jsx";
-
+import Footer from "./components/Footer";
 
 const App = () => {
   const spans = ["", "", "", "", ""];
@@ -30,10 +29,14 @@ const App = () => {
           );
         })}
       </div>
-      
+
       <a
         href="#top"
-        className={` ${mode === true ? "border-[#ddd] text-white border border-solid " : "border-[#1d1d1d] text-[#1d1d1d] border border-solid"} fixed bottom-3 right-3 md:bottom-5 md:right-8  p-2 md:p-3 rounded-full  z-50 animate-updown`} 
+        className={` ${
+          mode === true
+            ? "border-[#ddd] text-white border border-solid "
+            : "border-[#1d1d1d] text-[#1d1d1d] border border-solid"
+        } fixed bottom-3 right-3 md:bottom-5 md:right-8  p-2 md:p-3 rounded-full  z-50 animate-updown`}
       >
         <button className=" text-xl">
           <IoIosArrowUp />
@@ -41,13 +44,16 @@ const App = () => {
       </a>
       <a
         href="#top"
-        className={` ${mode === true ? "border-[#ddd] text-white border border-solid " : "border-[#1d1d1d] text-[#1d1d1d] border border-solid"} fixed bottom-3 right-3 md:bottom-5 md:right-8  p-2 md:p-3 rounded-full  z-50 animate-updown`} 
+        className={` ${
+          mode === true
+            ? "border-[#ddd] text-white border border-solid "
+            : "border-[#1d1d1d] text-[#1d1d1d] border border-solid"
+        } fixed bottom-3 right-3 md:bottom-5 md:right-8  p-2 md:p-3 rounded-full  z-50 animate-updown`}
       >
         <button className=" text-xl">
           <IoIosArrowUp />
         </button>
       </a>
-      
 
       <Container>
         <Header />
@@ -56,7 +62,7 @@ const App = () => {
           <Route path="/projectDetails/:id" element={<ProjectDetails />} />
           <Route path="/AllProject" element={<AllProject />} />
         </Routes>
-        <Footer/>        
+        <Footer />
       </Container>
     </>
   );
