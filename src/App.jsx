@@ -9,7 +9,6 @@ import Home from "./Pages/Home";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Header from "./components/Header";
 import AllProject from "./Pages/AllProject";
-import Footer from "./components/Footer";
 
 const App = () => {
   const spans = ["", "", "", "", ""];
@@ -62,7 +61,6 @@ const App = () => {
           <Route path="/projectDetails/:id" element={<ProjectDetails />} />
           <Route path="/AllProject" element={<AllProject />} />
         </Routes>
-        <Footer />
       </Container>
     </>
   );
