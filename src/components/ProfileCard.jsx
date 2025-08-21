@@ -60,7 +60,6 @@ const ProfileCard = ({mode}) => {
           </ul>
         </div>
       </div>
-      |
     </div>
   );
 };
